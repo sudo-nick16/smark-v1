@@ -237,13 +237,6 @@ footer{
     visibility: visible;
     opacity: 1;
 }
-/* .btn:hover{ 
-    display: inline-block !important;
-    /* float: center !important; */
-    /* background-color: rgba(43, 42, 42, 0) !important; */
-    /* transform: scale(1.15);
-    border-color: cyan !important;
-} */ 
 
 #login{
     font-size: 20px;
@@ -274,7 +267,6 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-  	
 	margin: auto;
 }
 

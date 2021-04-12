@@ -1,7 +1,6 @@
 var size = localStorage.length
 console.log(size)
 
-
 function del(){
     var key = this.id;
     console.log('deleted');
@@ -9,10 +8,6 @@ function del(){
     location.reload();
     
 }
-// Object.keys(localStorage).forEach(function(key){
-//     console.log(localStorage.getItem(key));
-//  });
-
  var usrnm = localStorage.getItem('username_smark');
  document.getElementById("un").innerHTML= usrnm;
  var res = localStorage.getItem('smark_pfp');
@@ -23,7 +18,7 @@ function del(){
 image.setAttribute('id','pfp')
  pfpdiv.appendChild(image);
  if(usrnm)
- console.log(usrnm + "is logged in. Enjoy my project..");
+ {console.log(usrnm + "is logged in. Enjoy my project..");}
  
 
 for(i=0; i<size ; i++){
