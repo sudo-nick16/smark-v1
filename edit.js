@@ -26,7 +26,7 @@ next.addEventListener("click", function(){
         window.open('./main.html',"_self");
     }
     catch {
-        if(confirm("Do you wanna use you previous profile pic?")){
+        if(confirm("Do you wanna use your previous profile pic?")){
             window.open('./main.html',"_self");
         }
         document.getElementById("mainlog").style.boxShadow =  "0px 0px 15px black";
