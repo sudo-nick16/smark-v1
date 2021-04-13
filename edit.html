@@ -11,24 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="flbdy">
     <header>
         <span class="hd"><img src="logo.png" alt="logo" id="logo" /> </span>
         <span class="hd"><h1>SMARK</h1> </span>
-        <span class="hd" id="un"></span>
-        <span class="hd" id="pfpup"></span>
     </header>
-<main>
-    <div id="rdiv">
+<main id="mainlog">
+        <h3 class="lgtxt">Username</h3>
+        <input type="text" id="uinp">
+        <h3 class="lgtxt">Choose profile photo</h3>
+        <input type="file" id="upfp"> <br>
+        <button id="btnedit">Save changes</button>
         
-    </div>
 </main>
  <footer>
-        <div id="ftr">
-       <span id="fhf"> <label for="inp" id="lbl">Enter Url</label></span>
-      <span id="shf"><button id="add" onclick=geturl()><img src="p.png" id="pbtn" alt="Add" /></button> <input type="url" id="inp" /> </span>
+ <div id="ftr">
+       <span id="fhf"> <label for="inp" id="lbl"><a id="aftr" href="https://linkedin.com/in/sudo-nick/" target="_blank">@sudo-nick</a></label></span>
     </div>
     </footer>
-    <script src="smark.js"></script>
+    <script src="edit.js"></script>
     </body>
 </html>

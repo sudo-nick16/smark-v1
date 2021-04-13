@@ -1,12 +1,3 @@
-if("smark_pfp" in localStorage && "username_smark" in localStorage){
-    var redirect = document.getElementById("flbdy");
-    redirect.classList.add("redirect");
-    redirect.innerHTML = "<div class='loader'></div><br>Already logged in... redirecting to the dashboard.";
-    setTimeout(function()
-    {   window.open("./main.html","_self");  
-    },500);
-  }
-
 var tusr = document.getElementById("uinp");
 var usr_val = localStorage.getItem('username_smark')
 if(usr_val)
@@ -14,7 +5,7 @@ if(usr_val)
 }
 
 var pfp = document.getElementById("upfp");
-var next = document.getElementById("btnnext");
+var next = document.getElementById("btnedit");
 next.addEventListener("click", function(){
     console.log("yoyoyo")
     var username = document.getElementById("uinp").value;
@@ -35,11 +26,13 @@ next.addEventListener("click", function(){
         window.open('./main.html',"_self");
     }
     catch {
-        
+        if(confirm("Do you wanna use you previous profile pic?")){
+            window.open('./main.html',"_self");
+        }
+        document.getElementById("mainlog").style.boxShadow =  "0px 0px 15px black";
         setTimeout(function(){
             document.getElementById("mainlog").style.boxShadow =  "0px 0px 15px red";
         },20)
-        document.getElementById("mainlog").style.boxShadow =  "0px 0px 15px black";
         
     }
 });

@@ -8,6 +8,7 @@ function del(){
     location.reload();
     
 }
+//appending username and profile pic
  var usrnm = localStorage.getItem('username_smark');
  document.getElementById("un").innerHTML= usrnm;
  var res = localStorage.getItem('smark_pfp');
@@ -18,7 +19,17 @@ function del(){
 image.setAttribute('id','pfp')
  pfpdiv.appendChild(image);
  if(usrnm)
- {console.log(usrnm + "is logged in. Enjoy my project..");}
+ {console.log(usrnm + " is logged in. \n@sudo-nick");
+}
+
+ //creating edit profile
+ const ediv = document.createElement("div");
+ ediv.classList.add("ediv");
+ ediv.innerHTML = '<button id="editbtn"><img src="edit.png" alt="yo" height="20px" width="20px"></button>';
+ pfpdiv.appendChild(ediv);
+ ediv.addEventListener('click', function(){
+   window.open("edit.html","_self");
+ })
  
 
 for(i=0; i<size ; i++){
@@ -58,6 +69,7 @@ for(i=0; i<size ; i++){
     btn.id = key;
     btn.onclick = del;
     bdiv.appendChild(btn);}
+
 }
 
 async function geturl(){
