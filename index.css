@@ -195,17 +195,20 @@ footer{
 
   /* scroll bar */
   ::-webkit-scrollbar {
-    width: 11px;
+    width: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0); 
+    border-radius: 5px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), cyan, rgba(0, 0, 0, 0));
+    border-radius: 5px;
+    background-color: rgb(58, 58, 58);
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), cyan, rgba(0, 0, 0, 0)); */
   }
   
   .btn{
@@ -255,8 +258,10 @@ footer{
     text-align: center;
 }
 
+
 #mainlog{
 	width: 25%;
+    
 	height: 55%;
 	border: 2px rgb(43, 43, 43) solid;
 	color: white;
@@ -328,7 +333,7 @@ input[type="file"]::-webkit-file-upload-button {
   }
 
 #btnnext{
-    margin: 10% auto;
+    margin: 5% auto;
     background-color: #7637dd;
     border: none;
     outline: none;
@@ -398,9 +403,11 @@ input[type="file"]::-webkit-file-upload-button {
       margin: 0;
       padding: 0;
       border-radius: 20px;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.1s linear;
   }
-  #pfp:hover #editbtn{
-    display: block !important;
+  #editbtn:hover{
+      opacity: 100;
   }
 
   #auname{
@@ -422,4 +429,179 @@ input[type="file"]::-webkit-file-upload-button {
 #btnedit:hover{
     background-color: #5b0fd6;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  
+    #mainlog{
+        width: 70% !important;
+        height: 50% !important;
+        border: 2px rgb(43, 43, 43) solid;
+        color: white;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 15px black;
+        text-align: center;
+        margin: auto;
+    }
+    #uinp{
+        margin: 0;
+        background-color: rgb(24, 24, 24);
+        outline: none;
+        border: 1px rgb(43, 43, 43) solid;
+        border-radius: 30px;
+        height: 35px;
+        width: 75%;
+        color: white;
+        font-weight: bold;
+        caret-color: white;
+        text-align: center;
+        font-family: 'Baloo Da 2';
+        font-size: 20px;
+        
+    }
+    #upfp{
+        margin: 0;
+        background-color: rgb(24, 24, 24);
+        outline: none;
+        border: 1px rgb(43, 43, 43) solid;
+        border-radius: 20px;
+        height: 40px;
+        width: 75% ;
+        overflow: hidden;
+    
+    }
+    
+    input[type="file"]::-webkit-file-upload-button {
+        vertical-align: middle;
+        height: 75%;
+        background-color: #7637dd;
+        border-radius: 20px;
+        margin: 5px 7px;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+      }
+
+      #logo{
+        position: absolute;
+        left: 5px;
+        width: 60px;
+        height: 60px;
+        top: 15px;
+        border-radius: 125px;
+        vertical-align: center;
+    }
+
+    header{
+        background-color: rgb(21,21,21);
+        width: 100%;
+        position: relative;
+        height: 90px;
+    }
+      h1{
+        margin: 0;
+        position: absolute;
+        top: 15px;
+        left: 80px;
+        color: #7637dd;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Baloo Da 2';
+        text-shadow: 0 0 5px #282828;
+        text-shadow: 2px 0 0 #353535, -2px 0 0 #353535, 0 2px 0 #353535, 0 -2px 0 #353535, 1px 1px #353535, -1px -1px 0 #353535, 1px -1px 0 #353535, -1px 1px 0 #353535;
+    }
+
+    #un{
+        right: 80px;
+        top: 35px;
+        margin: 0;
+        position:absolute;
+        color: white;
+        font-size: 15px;
+    }
+
+    #pfp{
+        display: block;
+        top: 17px;
+        right: 15px;
+        margin: 0;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 125px;
+    }
+    footer{
+    position:absolute;
+    bottom: 0px;
+    background-color: rgb(21,21,21);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    padding: 10px 0 30px 0;
+    margin: 0;
+}
+
+#ftr{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* margin: 15px 0px; */
+    margin: 10px 0 0 0;
+}
+
+#lbl{
+    color: #ffff ;
+    font-size: 25px;
+    display: inline;
+    cursor: pointer;
+}
+
+
+#rdiv{
+    display: inline;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px white solid;
+    margin: 30px auto 0 auto;
+    height: 60vh;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.sright{
+    flex: 1;
+    font-size: 20px;
+    color: white;
+    /* display: inline-block; */
+    height: 100px;
+    width: 150px;
+    border: 2px rgb(43, 43, 43) solid;
+    border-radius: 20px;
+    margin: 3% 3%;
+    background-color: rgba(0, 0, 0, 0);
+    float: left;
+    box-shadow: 0 0 15px black;
+    position: relative;
+    text-align: center;
+
+}
+
+#aftr{
+    display: block;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+body{
+    text-align: center;
+    margin: 0;
+}
 }
