@@ -333,7 +333,7 @@ input[type="file"]::-webkit-file-upload-button {
   }
 
 #btnnext{
-    margin: 5% auto;
+    margin: 4vh auto;
     background-color: #7637dd;
     border: none;
     outline: none;
