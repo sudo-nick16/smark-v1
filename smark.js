@@ -52,8 +52,16 @@ for(i=0; i<size ; i++){
     var atag = document.createElement("a");
     atag.target = '_blank';
     atag.href = t;
-    atag.innerText = key;
-    atag.classList.add('atag');
+    
+    
+    if (key.slice(0,2) === "##"){
+      console.log("ffff")
+      atag.innerText = key.slice(2);
+      atag.classList.add('atag','atag_api_rejects');
+    }else{
+      atag.innerText = key;
+      atag.classList.add('atag');
+    }
     sdiv.appendChild(atag);
 
 
@@ -73,17 +81,28 @@ for(i=0; i<size ; i++){
 }
 
 async function geturl(){
-    var url = document.getElementById("inp").value;
+  var url = document.getElementById("inp").value;
+  if(url){
+try
+{  
     console.log(url);
     var key_t = 'https://opengraph.io/api/1.1/site/' + encodeURIComponent(url) +'?app_id=82f3558c-44b9-4f42-8698-fd9d39d53355'
     var req = await fetch(key_t);
     var data = await req.json();
     var tit = ((data['htmlInferred'])['title']);
     console.log(key_t);
-    var title = tit.charAt(0).toUpperCase() + tit.slice(1);
-    localStorage.setItem(title,url);
-    location.reload();
-
+  }
+  catch{
+    alert("The Api couldn't find the title of provided URL, the entered URL would be saved as it is");
+    var tempurl = new URL(url);
+    var tit = "##" + tempurl.hostname + tempurl.pathname;
+    console.log(url.hostname);
+    
+  }  
+}
+  var title = tit.charAt(0).toUpperCase() + tit.slice(1);
+  localStorage.setItem(title,url);
+  location.reload();
 }
 
 //triggering button on pressing enter
@@ -94,3 +113,5 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("add").click();
   }
 });
+
+

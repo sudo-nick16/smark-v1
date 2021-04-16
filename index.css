@@ -1,321 +1,474 @@
-body{
-    margin: 0;
-    background-color: #282828;
-    font-family: 'Baloo Da 2';
+body {
+  margin: 0;
+  background-color: #282828;
+  font-family: "Baloo Da 2";
 }
-header{
-    background-color: rgb(21,21,21);
-    width: 100%;
-    position: relative;
-    height: 100px;
+header {
+  background-color: rgb(21, 21, 21);
+  width: 100%;
+  position: relative;
+  height: 100px;
 }
-span{
-    display: inline;
+span {
+  display: inline;
 }
-#logo{
-    position: absolute;
-    left: 20px;
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    border-radius: 125px;
-    vertical-align: center;
+#logo {
+  position: absolute;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  border-radius: 125px;
+  vertical-align: center;
 }
-h1{
-    margin: 0;
-    position: absolute;
-    top: 10px;
-    left: 120px;
-    color: #7637dd;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Baloo Da 2';
-    text-shadow: 0 0 5px #282828;
-    text-shadow: 2px 0 0 #353535, -2px 0 0 #353535, 0 2px 0 #353535, 0 -2px 0 #353535, 1px 1px #353535, -1px -1px 0 #353535, 1px -1px 0 #353535, -1px 1px 0 #353535;
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  color: #7637dd;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Baloo Da 2";
+  text-shadow: 0 0 5px #282828;
+  text-shadow: 2px 0 0 #353535, -2px 0 0 #353535, 0 2px 0 #353535,
+    0 -2px 0 #353535, 1px 1px #353535, -1px -1px 0 #353535, 1px -1px 0 #353535,
+    -1px 1px 0 #353535;
 }
-#un{
-    right: 100px;
-    top: 35px;
-    margin: 0;
-    position:absolute;
-    color: white;
-    font-size: 20px;
+#un {
+  right: 100px;
+  top: 35px;
+  margin: 0;
+  position: absolute;
+  color: white;
+  font-size: 20px;
 }
-#pfp{
-    display: block;
-    top: 17px;
-    right: 15px;
-    margin: 0;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 125px;
+#pfp {
+  display: block;
+  top: 17px;
+  right: 15px;
+  margin: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 125px;
 }
-footer{
-    position:absolute;
-    bottom: 0;
-    background-color: rgb(21,21,21);
-    width: 100%;
-    height: 80px;
-    position: fixed;
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(21, 21, 21);
+  width: 100%;
+  height: 80px;
+  position: fixed;
 }
-#lbl{
-    color: #ffff ;
-    font-size: 25px;
-    display: inline;
-    margin: 0;
-    cursor: pointer;
+#lbl {
+  color: #ffff;
+  font-size: 25px;
+  display: inline;
+  margin: 0;
+  cursor: pointer;
 }
-#inp{
-    margin: 0;
-    display: inline;
-    padding: 7px 15px;
-    outline: none;
-    border: none;
-    height: 22px;
-    border-radius: 80px;
-    background-color: rgb(12, 12, 12);
-    color: gray;
-    font-size: 18px;
-    width: 80%;
-    font-family: 'Baloo Da 2';
-    font-weight: lighter;
-    caret-color: purple;
-   
+#inp {
+  margin: 0;
+  display: inline;
+  padding: 7px 15px;
+  outline: none;
+  border: none;
+  height: 22px;
+  border-radius: 80px;
+  background-color: rgb(12, 12, 12);
+  color: gray;
+  font-size: 18px;
+  width: 80%;
+  font-family: "Baloo Da 2";
+  font-weight: lighter;
+  caret-color: purple;
 }
-#ftr{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    /* margin: 15px 0px; */
-    margin: 17px 10px;
+#ftr {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /* margin: 15px 0px; */
+  margin: 17px 10px;
 }
-#fhf{
-    display: inline;
+#fhf {
+  display: inline;
 }
-#shf{
-    display: inline;
-    margin-left: 30px;
-    position: relative;
+#shf {
+  display: inline;
+  margin-left: 30px;
+  position: relative;
 }
-#add{
-    margin: 0;
-    right: 13px;
-    bottom: 2px;
-    position:absolute;
-    height: 26px;
-    width: 26px;
-    text-align: center;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    transition: transform .2s;
-    cursor: pointer;
+#add {
+  margin: 0;
+  right: 13px;
+  bottom: 2px;
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
-#pbtn{
-    height: 24px;
-    width: 24px;
-    transition: transform .2s;
-    /* background-color: white; */
+#pbtn {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.2s;
+  /* background-color: white; */
 }
-#add:hover #pbtn{
- transform: scale(1.1);
+#add:hover #pbtn {
+  transform: scale(1.1);
 }
 
-.sright{
-    font-size: 20px;
-    color: white;
-    /* display: inline-block; */
-    height: 100px;
-    width: 160px;
+.sright {
+  font-size: 20px;
+  color: white;
+  /* display: inline-block; */
+  height: 14vh;
+  width: 11vw;
+  border: 2px rgb(43, 43, 43) solid;
+  border-radius: 20px;
+  margin: 4% 3% 2% 3%;
+  background-color: rgba(0, 0, 0, 0);
+  float: left;
+  box-shadow: 0 0 15px black;
+  position: relative;
+  text-align: center;
+}
+
+#rdiv {
+  /* border: 5px white solid; */
+  height: 71.5vh;
+  max-width: 64%;
+
+  margin: auto;
+  overflow: auto;
+}
+
+.atag {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.945);
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Baloo Da 2";
+  /* white-space: nowrap  !important; */
+  text-overflow: ellipsis !important;
+  text-decoration: none !important ;
+  overflow: hidden;
+  /* word-break:break-all; */
+  font: Montserrat;
+  outline: none;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+.atag:hover {
+  color: rgb(202, 145, 235) !important;
+}
+.atag_api_rejects {
+  word-break: break-all !important;
+}
+.sdiv {
+  margin-top: 20px;
+  display: inline-block;
+  top: 20%;
+  background-color: rgb(0, 0, 0, 0);
+  width: 80%;
+  height: 60%;
+  text-overflow: ellipsis;
+}
+.bdiv {
+  background-color: rgba(0, 0, 0, 0);
+  width: 25px !important;
+  height: 25px !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(70, 69, 69),
+    rgba(0, 0, 0, 0)
+  );
+  /* background-color: rgb(58, 58, 58); */
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), cyan, rgba(0, 0, 0, 0)); */
+}
+
+.btn {
+  visibility: hidden;
+  padding: 2px;
+  font-size: 10px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #7637dd;
+  color: white;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  border: 1px rgb(68, 68, 68) solid;
+  float: right;
+  box-shadow: 2px 2px 5px rgb(17, 17, 17);
+  transition: transform 0.2s;
+  outline: none;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  transition: transform 0.2s;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0);
+}
+.sright:hover .btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+#login {
+  font-size: 20px;
+  color: white;
+  display: block;
+  height: 60%;
+  width: 50%;
+  border: 2px rgb(43, 43, 43) solid;
+  border-radius: 20px;
+  margin: 0% 25%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 15px black;
+  text-align: center;
+}
+
+#mainlog {
+  width: 25%;
+
+  height: 55%;
+  border: 2px rgb(43, 43, 43) solid;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 15px black;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.lgtxt {
+  margin: 40px auto 10px auto;
+  color: whitesmoke;
+}
+
+#h2tag {
+  margin: 7px;
+}
+#uinp {
+  margin: 0;
+  background-color: rgb(24, 24, 24);
+  outline: none;
+  border: 1px rgb(43, 43, 43) solid;
+  border-radius: 30px;
+  height: 35px;
+  width: 62%;
+  color: white;
+  font-weight: bold;
+  caret-color: white;
+  text-align: center;
+  font-family: "Baloo Da 2";
+  font-size: 20px;
+}
+
+#upfp {
+  margin: 0;
+  background-color: rgb(24, 24, 24);
+  outline: none;
+  border: 1px rgb(43, 43, 43) solid;
+  border-radius: 20px;
+  height: 40px;
+  width: 62%;
+  overflow: hidden;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  vertical-align: middle;
+  height: 75%;
+  background-color: #7637dd;
+  border-radius: 20px;
+  margin: 5px 7px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #5b0fd6;
+}
+
+#btnnext {
+  margin: 4vh auto;
+  background-color: #7637dd;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  font-family: "Baloo Da 2";
+}
+#btnnext:hover {
+  background-color: #5b0fd6;
+  cursor: pointer;
+}
+
+#aftr {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+#aftr:hover {
+  color: #7637dd;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.redirect {
+  margin: 15% auto;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.loader {
+  display: inline-block;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #00ffd5; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ediv {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+}
+
+#editbtn {
+  display: block;
+  background-color: rgb(21, 21, 21);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.1s linear;
+}
+#editbtn:hover {
+  opacity: 100;
+}
+
+#auname {
+  text-decoration: none;
+  color: white;
+}
+#btnedit {
+  margin: 10% auto;
+  background-color: #7637dd;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  font-family: "Baloo Da 2";
+}
+#btnedit:hover {
+  background-color: #5b0fd6;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  #mainlog {
+    width: 70% !important;
+    height: 50% !important;
     border: 2px rgb(43, 43, 43) solid;
-    border-radius: 20px;
-    margin: 3% 3%;
-    background-color: rgba(0, 0, 0, 0);
-    float: left;
-    box-shadow: 0 0 15px black;
-    position: relative;
-    text-align: center;
-
-}
-
-#rdiv{
-    /* border: 5px white solid; */
-    height: 475px;
-    max-width: 64%;
-    
-    margin:auto;
-    overflow: auto;
-}
-
-
-.atag{
-    display: inline-block !important;
     color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.945);
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    font-family: 'Baloo Da 2';
-    /* font-family: 'Amaranth', sans-serif; */
-    /* white-space: nowrap  !important; */
-    text-overflow: ellipsis !important;
-    text-decoration: none !important ;
-    overflow: hidden;
-    font: Montserrat !important;
-    outline: none !important;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 2 !important;
-    -webkit-box-orient: vertical !important;  
-}
-.atag:hover{
-    color: rgb(202, 145, 235) !important;
-}
-.sdiv{
-    text-align: center;
-    /* margin: auto; */
-    margin-top:20px;
-    display: inline-block ;
-    /* position:absolute; */
-    top: 20%;
-    /* right: 0px; */
-    background-color: rgb(0, 0, 0,0);
-    width: 80%;
-    height: 60%;
-    text-overflow: ellipsis;
-}
-.bdiv{
-    background-color: rgba(0, 0, 0, 0);
-    width:25px !important;
-    height:25px !important;
-    position: absolute;
-    top:0;
-    right:0;
-}
-
-  /* scroll bar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0); 
-    border-radius: 5px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: rgb(58, 58, 58);
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), cyan, rgba(0, 0, 0, 0)); */
-  }
-  
-  .btn{
-     visibility: hidden;
-    padding : 2px ;
-    font-size: 10px ;
-    font-weight: bolder ;
-    text-align: center ;
-    background-color: #7637dd ;
-    color: white;
-    border-radius: 50px ;
-    width: 25px ;
-    height: 25px ;
-    border: 1px rgb(68, 68, 68) solid;
-    float:right ;
-    box-shadow: 2px 2px 5px rgb(17, 17, 17);
-    transition: transform .2s  ;
-    outline: none;
-    position:absolute;
-    top:-8px;
-    right: -8px;
-    transition: transform .2s;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.2s linear;
-
-}
-.btn:hover{
-    transform: scale(1.1);
-    background-color: rgba(0,0,0,0);
-}
-.sright:hover .btn{
-    visibility: visible;
-    opacity: 1;
-}
-
-#login{
-    font-size: 20px;
-    color: white;
-    display: block;
-    height: 60%;
-    width: 50%;
-    border: 2px rgb(43, 43, 43) solid;
-    border-radius: 20px;
-    margin: 0% 25%;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0 0 15px black;
-    text-align: center;
-}
-
-
-#mainlog{
-	width: 25%;
-    
-	height: 55%;
-	border: 2px rgb(43, 43, 43) solid;
-	color: white;
     font-size: 20px;
     border-radius: 20px;
-	position: absolute;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 15px black;
     text-align: center;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-.lgtxt{
-    margin: 40px auto 10px auto;
-    color: whitesmoke;
-}
-
-#h2tag{
-    margin: 7px;
-}
-#uinp{
+    margin: auto;
+  }
+  #uinp {
     margin: 0;
     background-color: rgb(24, 24, 24);
     outline: none;
     border: 1px rgb(43, 43, 43) solid;
     border-radius: 30px;
     height: 35px;
-    width: 62%;
+    width: 75%;
     color: white;
     font-weight: bold;
     caret-color: white;
     text-align: center;
-    font-family: 'Baloo Da 2';
+    font-family: "Baloo Da 2";
     font-size: 20px;
-    
-}
-
-#upfp{
+  }
+  #upfp {
     margin: 0;
     background-color: rgb(24, 24, 24);
     outline: none;
     border: 1px rgb(43, 43, 43) solid;
     border-radius: 20px;
     height: 40px;
-    width: 62%;
+    width: 75%;
     overflow: hidden;
+  }
 
-}
-
-input[type="file"]::-webkit-file-upload-button {
+  input[type="file"]::-webkit-file-upload-button {
     vertical-align: middle;
     height: 75%;
     background-color: #7637dd;
@@ -325,244 +478,86 @@ input[type="file"]::-webkit-file-upload-button {
     border: none;
     outline: none;
     cursor: pointer;
-    
-  }
-  
-  input[type="file"]::-webkit-file-upload-button:hover{
-    background-color: #5b0fd6;
   }
 
-#btnnext{
-    margin: 4vh auto;
-    background-color: #7637dd;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    width:80px;
-    height: 40px;
+  #logo {
+    position: absolute;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    border-radius: 125px;
+    vertical-align: center;
+  }
+
+  header {
+    background-color: rgb(21, 21, 21);
+    width: 100%;
+    position: relative;
+    height: 90px;
+  }
+  h1 {
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    color: #7637dd;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Baloo Da 2";
+    text-shadow: 0 0 5px #282828;
+    text-shadow: 2px 0 0 #353535, -2px 0 0 #353535, 0 2px 0 #353535,
+      0 -2px 0 #353535, 1px 1px #353535, -1px -1px 0 #353535, 1px -1px 0 #353535,
+      -1px 1px 0 #353535;
+  }
+
+  #un {
+    right: 80px;
+    top: 35px;
+    margin: 0;
+    position: absolute;
     color: white;
     font-size: 15px;
-    font-family: 'Baloo Da 2';
-}
-#btnnext:hover{
-    background-color: #5b0fd6;
-    cursor: pointer;
-}
+  }
 
-#aftr{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    
-}
-#aftr:hover{
-    color: #7637dd;
-    text-shadow: 0 0 20px rgb(0, 0, 0);
-
-}
-
-.redirect{
-    margin: 15% auto;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-
-.loader {
-    display: inline-block;
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #00ffd5; /* Blue */
-    border-radius: 50%;
+  #pfp {
+    display: block;
+    top: 17px;
+    right: 15px;
+    margin: 0;
+    position: absolute;
     width: 50px;
     height: 50px;
-    animation: spin 2s linear infinite;
+    border-radius: 125px;
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-
-.ediv{   
-        position: absolute;
-        bottom: 25px;
-        right: 10px;
-
-  }
-
-  #editbtn{
-      display: block;
-      background-color: rgb(21,21,21);
-      outline: none;
-      border: none;
-      cursor: pointer;
-      width: 20px;
-      height: 20px;
-      margin: 0;
-      padding: 0;
-      border-radius: 20px;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.1s linear;
-  }
-  #editbtn:hover{
-      opacity: 100;
-  }
-
-  #auname{
-      text-decoration: none;
-      color: white;
-  }
-  #btnedit{
-    margin: 10% auto;
-    background-color: #7637dd;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    width:120px;
-    height: 40px;
-    color: white;
-    font-size: 15px;
-    font-family: 'Baloo Da 2';
-}
-#btnedit:hover{
-    background-color: #5b0fd6;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 720px) {
-  
-    #mainlog{
-        width: 70% !important;
-        height: 50% !important;
-        border: 2px rgb(43, 43, 43) solid;
-        color: white;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: rgba(0, 0, 0, 0);
-        box-shadow: 0 0 15px black;
-        text-align: center;
-        margin: auto;
-    }
-    #uinp{
-        margin: 0;
-        background-color: rgb(24, 24, 24);
-        outline: none;
-        border: 1px rgb(43, 43, 43) solid;
-        border-radius: 30px;
-        height: 35px;
-        width: 75%;
-        color: white;
-        font-weight: bold;
-        caret-color: white;
-        text-align: center;
-        font-family: 'Baloo Da 2';
-        font-size: 20px;
-        
-    }
-    #upfp{
-        margin: 0;
-        background-color: rgb(24, 24, 24);
-        outline: none;
-        border: 1px rgb(43, 43, 43) solid;
-        border-radius: 20px;
-        height: 40px;
-        width: 75% ;
-        overflow: hidden;
-    
-    }
-    
-    input[type="file"]::-webkit-file-upload-button {
-        vertical-align: middle;
-        height: 75%;
-        background-color: #7637dd;
-        border-radius: 20px;
-        margin: 5px 7px;
-        color: white;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        
-      }
-
-      #logo{
-        position: absolute;
-        left: 5px;
-        width: 60px;
-        height: 60px;
-        top: 15px;
-        border-radius: 125px;
-        vertical-align: center;
-    }
-
-    header{
-        background-color: rgb(21,21,21);
-        width: 100%;
-        position: relative;
-        height: 90px;
-    }
-      h1{
-        margin: 0;
-        position: absolute;
-        top: 15px;
-        left: 80px;
-        color: #7637dd;
-        font-size: 40px;
-        font-weight: bold;
-        font-family: 'Baloo Da 2';
-        text-shadow: 0 0 5px #282828;
-        text-shadow: 2px 0 0 #353535, -2px 0 0 #353535, 0 2px 0 #353535, 0 -2px 0 #353535, 1px 1px #353535, -1px -1px 0 #353535, 1px -1px 0 #353535, -1px 1px 0 #353535;
-    }
-
-    #un{
-        right: 80px;
-        top: 35px;
-        margin: 0;
-        position:absolute;
-        color: white;
-        font-size: 15px;
-    }
-
-    #pfp{
-        display: block;
-        top: 17px;
-        right: 15px;
-        margin: 0;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 125px;
-    }
-    footer{
-    position:absolute;
+  footer {
+    position: absolute;
     bottom: 0px;
-    background-color: rgb(21,21,21);
+    background-color: rgb(21, 21, 21);
     width: 100%;
     height: 100px;
     position: fixed;
     padding: 10px 0 30px 0;
     margin: 0;
-}
+  }
 
-#ftr{
+  #ftr {
     height: 100%;
     width: 100%;
     text-align: center;
     /* margin: 15px 0px; */
     position: absolute;
     margin: auto;
-}
+  }
 
-#lbl{
-    color: #ffff ;
+  #lbl {
+    color: #ffff;
     font-size: 25px;
     display: inline;
     cursor: pointer;
-}
+  }
 
-
-#inp{
+  #inp {
     margin: 0;
     display: inline;
     padding: 7px 15px;
@@ -574,27 +569,25 @@ input[type="file"]::-webkit-file-upload-button {
     color: gray;
     font-size: 18px;
     width: 80%;
-    font-family: 'Baloo Da 2';
+    font-family: "Baloo Da 2";
     font-weight: lighter;
     caret-color: purple;
     margin: 20px auto 20px auto;
-   
-}
+  }
 
-
-#rdiv{
+  #rdiv {
     display: inline;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     /* border: 5px white solid; */
-    margin: 30px auto 0 auto;
+    margin: 40px auto 0 auto;
     height: 60vh;
     max-height: 70vh;
     overflow: auto;
-}
+  }
 
-.sright{
+  .sright {
     flex: 1;
     font-size: 20px;
     color: white;
@@ -609,19 +602,18 @@ input[type="file"]::-webkit-file-upload-button {
     box-shadow: 0 0 15px black;
     position: relative;
     text-align: center;
+  }
 
-}
-
-#aftr{
+  #aftr {
     display: block;
     margin: 30px;
     text-decoration: none;
     color: white;
     font-size: 20px;
-}
+  }
 
-body{
+  body {
     text-align: center;
     margin: 0;
-}
+  }
 }
