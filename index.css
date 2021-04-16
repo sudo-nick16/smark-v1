@@ -236,6 +236,7 @@ footer {
   transition: transform 0.2s;
   opacity: 0;
   transition: visibility 0s, opacity 0.2s linear;
+  cursor: pointer;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -617,3 +618,4 @@ input[type="file"]::-webkit-file-upload-button:hover {
     margin: 0;
   }
 }
+
