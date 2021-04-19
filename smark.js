@@ -55,7 +55,7 @@ for(i=0; i<size ; i++){
     
     
     if (key.slice(0,2) === "##"){
-      console.log("ffff")
+      console.log("failed request")
       atag.innerText = key.slice(2);
       atag.classList.add('atag','atag_api_rejects');
     }else{
@@ -86,7 +86,7 @@ async function geturl(){
 try
 {  
     console.log(url);
-    var key_t = 'https://opengraph.io/api/1.1/site/' + encodeURIComponent(url) +'?app_id=82f3558c-44b9-4f42-8698-fd9d39d53355'
+    var key_t = 'https://opengraph.io/api/1.1/site/' + encodeURIComponent(url) +'?app_id=b227291b-c986-46ce-b319-cbf0990756c0'
     var req = await fetch(key_t);
     var data = await req.json();
     var tit = ((data['htmlInferred'])['title']);
