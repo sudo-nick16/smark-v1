@@ -55,7 +55,6 @@ for(i=0; i<size ; i++){
     
     
     if (key.slice(0,2) === "##"){
-      console.log("failed request")
       atag.innerText = key.slice(2);
       atag.classList.add('atag','atag_api_rejects');
     }else{
@@ -90,13 +89,17 @@ try
     var req = await fetch(key_t);
     var data = await req.json();
     var tit = ((data['htmlInferred'])['title']);
-    console.log(key_t);
+    if(!tit){
+      throw 'Title is' + typeof(tit);
+    }
+    console.log(tit);
   }
   catch{
     alert("The Api couldn't find the title of provided URL, the entered URL would be saved as it is");
     var tempurl = new URL(url);
     var tit = "##" + tempurl.hostname + tempurl.pathname;
-    console.log(url.hostname);
+   
+    console.log(tit);
     
   }  
 }
