@@ -5,8 +5,8 @@ function del(){
     var key = this.id;
     console.log('deleted');
     localStorage.removeItem(key);
-    location.reload();
-    
+    document.getElementById(key).remove();
+    // location.reload();
 }
 //appending username and profile pic
  var usrnm = localStorage.getItem('username_smark');
@@ -40,6 +40,7 @@ for(i=0; i<size ; i++){
     var tag = document.createElement("div");
     const maindiv = document.getElementById("rdiv");
     tag.classList.add('sright')
+    tag.id = key;
     maindiv.appendChild(tag);
 
     //creating divfor_atag
@@ -98,9 +99,7 @@ try
     alert("The Api couldn't find the title of provided URL, the entered URL would be saved as it is");
     var tempurl = new URL(url);
     var tit = "##" + tempurl.hostname + tempurl.pathname;
-   
     console.log(tit);
-    
   }  
 }
   var title = tit.charAt(0).toUpperCase() + tit.slice(1);
